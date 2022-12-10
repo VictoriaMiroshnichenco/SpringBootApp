@@ -6,3 +6,9 @@ $ ./gradlew bootRun
 12 GitMerge
  git checkout main
  git merge newBrancheHeadDetachedTest
+
+13 CMD args
+.\gradlew bootRun --args=--enable
+works
+$ ./mvnw spring-boot:run -Dspring-boot.run.arguments="--enable"
+does not work

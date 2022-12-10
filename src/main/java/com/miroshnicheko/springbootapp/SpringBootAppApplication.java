@@ -10,9 +10,10 @@ public class SpringBootAppApplication {
 
     public static void main(String[] args) {
         new SpringApplicationBuilder()
-                .bannerMode(Banner.Mode.OFF)
+               // .bannerMode(Banner.Mode.OFF)
                 .sources(SpringBootAppApplication.class)
                 .run(args);
+        System.out.println("## > App Started!");
     }
 
 }
