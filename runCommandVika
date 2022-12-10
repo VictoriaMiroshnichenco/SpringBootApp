@@ -1,3 +1,4 @@
 $ ./gradlew bootRun
  ./mvnw spring-boot:run
  $ ./gradlew bootRun -Dspring.banner.location=classpath:/additionalResourceDir/banner.txt
+ $ ./gradlew bootRun
