@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootAppApplication {
 
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication
-                (SpringBootSimpleApplication.class);
-        //app.setBannerMode(Banner.Mode.OFF);
-        app.run(args);
+        new SpringApplicationBuilder()
+                .bannerMode(Banner.Mode.OFF)
+                .sources(SpringBootSimpleApplication.class)
+                .run(args);
     }
 
 }
