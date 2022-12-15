@@ -16,3 +16,9 @@ does not work
 
 NoOptArgs
 .\gradlew bootRun --args="arg1,arg2"
+
+
+@Value  server name test
+ .\gradlew bootRun
+The Server name is: fromAppProperties
+
