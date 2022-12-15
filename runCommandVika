@@ -12,3 +12,7 @@ $ ./gradlew bootRun
 works
 $ ./mvnw spring-boot:run -Dspring-boot.run.arguments="--enable"
 does not work
+
+
+NoOptArgs
+.\gradlew bootRun --args="arg1,arg2"

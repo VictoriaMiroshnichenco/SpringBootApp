@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class MyComponent {
   //  private static final Logger log = LoggerFactory.getLogger
@@ -13,12 +15,14 @@ public class MyComponent {
     @Autowired
     public MyComponent(ApplicationArguments args) {
         boolean enable = args.containsOption("enable");
-        if(enable) {
-           // log.info("## > You are enabled!");
-            System.out.println("## > You are enabled!");
-        }else{
-          //  log.info("## > You are not enabled!");
-            System.out.println("## > You are NOT enabled!");
-        }
+        List<String> myArgs = args.getNonOptionArgs();
+
+
+        System.out.println("## > Are you  enabled" + enable);
+        System.out.println("## > Are you  enabled" + myArgs);
+        if(!myArgs.isEmpty())
+            myArgs.forEach(a -> System.out.println(a));
     }
+
+
 }
