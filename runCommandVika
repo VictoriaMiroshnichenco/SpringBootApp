@@ -21,3 +21,11 @@ Properties cmd args order tests see separate branch
 1)use app.setDefaultProperties
 .\gradlew bootRun --args="arg1,arg2"
 2) .\gradlew bootRun --args="arg1,arg2" -Dprop1=from_cmd
+3)use application.properies
+.\gradlew bootRun --args="arg1,arg2"
+
+application.properties will override  app.setDefaultProperties but could be overriden -Dprop1
+ORDER:
+app.setDefaultProperties
+application.properties
+cmd -D
