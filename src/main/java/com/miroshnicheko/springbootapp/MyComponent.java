@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -14,11 +15,17 @@ public class MyComponent {
   //  private static final Logger log = LoggerFactory.getLogger
   //          (MyComponent.class);
 
-    @Value("${server.name}")
-    String serverName;
+
+    @Value("${prop1}")
+    String prop1;
     @Autowired
     public MyComponent(ApplicationArguments args) {
-        System.out.println("====from constructor MyComponent =====> serverName = " +serverName);
+        boolean enable = args.containsOption("enable");
+        List<String> myArgs = args.getNonOptionArgs();
+        System.out.println("## > Are you  enabled" + enable);
+        System.out.println("## > Are you  enabled" + myArgs);
+        if(!myArgs.isEmpty())
+            myArgs.forEach(a -> System.out.println(a));
     }
 
 
