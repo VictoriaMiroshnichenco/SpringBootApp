@@ -29,3 +29,15 @@ ORDER:
 app.setDefaultProperties
 application.properties
 cmd -D
+4)Use prod and dev profiles
+.\gradlew bootRun '-Dspring.profiles.active=prod'
+.\gradlew bootRun '-Dspring.profiles.active=dev'
+.\gradlew bootRun ' will use application.properties
+.\gradlew bootRun --args="arg1,arg2" -Dprop1=fromcmd  '-Dspring.profiles.active=prod'
+will use cmd
+
+
+
+
+
+
