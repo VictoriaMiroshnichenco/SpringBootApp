@@ -36,6 +36,9 @@ cmd -D
 .\gradlew bootRun --args="arg1,arg2" -Dprop1=fromcmd  '-Dspring.profiles.active=prod'
 will use cmd
 
+5)use prefix for MyAppProperties
+.\gradlew bootRun
+
 
 
 
