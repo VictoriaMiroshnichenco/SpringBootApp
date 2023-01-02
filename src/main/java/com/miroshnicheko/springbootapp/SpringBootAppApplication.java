@@ -1,5 +1,6 @@
 package com.miroshnicheko.springbootapp;
 
+import com.miroshnicheko.data.Entity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -30,6 +31,9 @@ public class SpringBootAppApplication {
         OtherAppProperties otherprops = (OtherAppProperties) context.getBean("otherAppProperties");
         System.out.println("====== from main get bean get field ======> MyAppProperties.myappproperties =" + otherprops.getMyappproperties());
 
+        Entity e = new Entity();
+        e.setId(12);
+        System.out.println(e.getId());
     }
 
 }
