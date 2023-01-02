@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import java.time.LocalDateTime;
 import java.util.Properties;
 
 @SpringBootApplication
@@ -31,9 +32,10 @@ public class SpringBootAppApplication {
         OtherAppProperties otherprops = (OtherAppProperties) context.getBean("otherAppProperties");
         System.out.println("====== from main get bean get field ======> MyAppProperties.myappproperties =" + otherprops.getMyappproperties());
 
-        Entity e = new Entity();
-        e.setId(12);
-        System.out.println(e.getId());
+
+      Entity e = Entity.builder().id("MyId").description("MyDescr").createdDate(LocalDateTime.now()).build();
+      System.out.println(e);
+
     }
 
 }
