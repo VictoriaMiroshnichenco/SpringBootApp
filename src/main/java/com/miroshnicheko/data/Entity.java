@@ -16,6 +16,7 @@ public class Entity {
     @NotNull
     private String description;
     private LocalDateTime createdDate;
+    private LocalDateTime modifiedDate;
 
 //    public Entity(){
 //        this.id = UUID.randomUUID().toString();

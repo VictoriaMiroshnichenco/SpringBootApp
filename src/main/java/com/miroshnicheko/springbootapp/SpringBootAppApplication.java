@@ -1,6 +1,7 @@
 package com.miroshnicheko.springbootapp;
 
 import com.miroshnicheko.data.Entity;
+import com.miroshnicheko.repository.CommonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -35,7 +36,11 @@ public class SpringBootAppApplication {
 
       Entity e = Entity.builder().id("MyId").description("MyDescr").createdDate(LocalDateTime.now()).build();
       System.out.println(e);
-
+        CommonRepository<Entity> repository = context.getBean(EntityRepository.class);
+        System.out.println(repository);
+        assert(repository!= null);
+        repository.save(e);
+        System.out.println( repository.findAll().iterator().hasNext());
     }
 
 }
