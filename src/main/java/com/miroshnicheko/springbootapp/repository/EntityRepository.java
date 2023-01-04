@@ -1,7 +1,6 @@
-package com.miroshnicheko.springbootapp;
+package com.miroshnicheko.springbootapp.repository;
 
 import com.miroshnicheko.data.Entity;
-import com.miroshnicheko.repository.CommonRepository;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;

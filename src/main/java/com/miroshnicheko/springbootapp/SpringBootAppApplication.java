@@ -1,7 +1,8 @@
 package com.miroshnicheko.springbootapp;
 
 import com.miroshnicheko.data.Entity;
-import com.miroshnicheko.repository.CommonRepository;
+import com.miroshnicheko.springbootapp.repository.CommonRepository;
+import com.miroshnicheko.springbootapp.repository.EntityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

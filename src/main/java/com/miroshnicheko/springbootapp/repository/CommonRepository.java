@@ -1,4 +1,4 @@
-package com.miroshnicheko.repository;
+package com.miroshnicheko.springbootapp.repository;
 
 import java.util.Collection;
 
