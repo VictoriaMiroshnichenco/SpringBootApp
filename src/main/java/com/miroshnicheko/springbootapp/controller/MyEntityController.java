@@ -5,6 +5,7 @@ import com.miroshnicheko.springbootapp.repository.EntityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController("/myapi")
@@ -17,4 +18,11 @@ public class MyEntityController {
     public ResponseEntity<Iterable<Entity>> getAllEntities(){
         return ResponseEntity.ok(repository.findAll());
     }
+
+    @GetMapping("/get")
+    public ResponseEntity<Entity> getEntity(@RequestParam String id){
+        return ResponseEntity.ok(repository.findById(id));
+    }
+
+
 }

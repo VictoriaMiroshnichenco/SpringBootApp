@@ -39,8 +39,8 @@ will use cmd
 5)use prefix for MyAppProperties
 .\gradlew bootRun
 
-
-
+http://localhost:8080/getAllEntities
+http://localhost:8080/get?id=MyId
 
 
 
