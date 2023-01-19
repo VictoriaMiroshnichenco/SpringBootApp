@@ -45,3 +45,10 @@ http://localhost:8080/get?id=MyId
 
 For API test see Postman
 MyApiTest_For_LPR
+
+for validation run
+http://localhost:8080/create
+{
+      "description": "MyDescr2",
+      "createdDate": "2023-01-18T13:47:43.168",
+      "modifiedDate": null}
