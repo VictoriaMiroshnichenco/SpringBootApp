@@ -4,9 +4,10 @@ import com.miroshnicheko.data.Entity;
 import com.miroshnicheko.springbootapp.repository.EntityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
+import java.net.URI;
 
 @RestController("/myapi")
 public class MyEntityController {
@@ -22,6 +23,16 @@ public class MyEntityController {
     @GetMapping("/get")
     public ResponseEntity<Entity> getEntity(@RequestParam String id){
         return ResponseEntity.ok(repository.findById(id));
+    }
+    @RequestMapping(value="/create", method = {RequestMethod.POST,
+            RequestMethod.PUT})
+
+    public ResponseEntity<Entity> createEntity(@RequestBody Entity entity){
+        Entity e = repository.save(entity);
+        URI location = ServletUriComponentsBuilder.fromCurrentRequest().
+                path("/{id}").buildAndExpand(e.getId()).toUri();
+        return ResponseEntity.created(location).build();
+
     }
 
 

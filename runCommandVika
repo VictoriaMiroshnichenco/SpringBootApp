@@ -43,4 +43,5 @@ http://localhost:8080/getAllEntities
 http://localhost:8080/get?id=MyId
 
 
-
+For API test see Postman
+MyApiTest_For_LPR
