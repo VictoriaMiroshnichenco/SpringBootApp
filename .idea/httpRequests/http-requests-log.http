@@ -1,0 +1,308 @@
+GET http://localhost:8080/getAllEntities
+
+<> 2023-01-19T183820.200.json
+
+###
+
+DELETE http://localhost:8080/delete/MyId1
+
+###
+
+DELETE http://localhost:8080/delete/MyId1
+
+###
+
+GET http://localhost:8080/getAllEntities
+
+<> 2023-01-19T183723.200.json
+
+###
+
+GET http://localhost:8080/getAllEntities
+
+<> 2023-01-19T183719.200.json
+
+###
+
+POST http://localhost:8080/create
+
+Content-Type: application/json
+{
+    "key": "{{my-var}}"
+}
+
+<> 2023-01-19T183602.415.json
+
+###
+
+GET http://localhost:8080/getAllEntities
+
+<> 2023-01-19T183511.200.json
+
+###
+
+POST http://localhost:8080/create
+
+Content-Type: application/json
+{
+    "key": "{{my-var}}"
+}
+
+<> 2023-01-18T153736.415.json
+
+###
+
+POST http://localhost:8080/create
+
+Content-Type: application/json
+{
+    "key": "{{my-var}}"
+}
+
+<> 2023-01-18T153643.415.json
+
+###
+
+POST http://localhost:8080/create
+
+Content-Type: application/json
+{
+    "key": "{{my-var}}"
+}
+
+<> 2023-01-18T153533.415.json
+
+###
+
+POST http://localhost:8080/create
+
+Content-Type: application/json
+{
+    "key": "{{my-var}}"
+}
+
+<> 2023-01-18T153530.415.json
+
+###
+
+POST http://localhost:8080/create
+
+Content-Type: application/json
+{
+    "key": "{{my-var}}"
+}
+
+<> 2023-01-18T153526.415.json
+
+###
+
+POST http://localhost:8080/create
+
+Content-Type: application/json
+{
+    "key": "{{my-var}}"
+}
+
+<> 2023-01-18T153140.415.json
+
+###
+
+POST http://localhost:8080/create
+
+Content-Type: application/json
+{
+    "key": "{{my-var}}"
+}
+
+<> 2023-01-18T152554.415.json
+
+###
+
+POST http://localhost:8080/create
+
+Content-Type: application/json
+{
+    "key": "{{my-var}}"
+}
+
+<> 2023-01-18T140219.415.json
+
+###
+
+POST http://localhost:8080/create
+HTTP/1.1:
+Content-Type: application/json
+{:
+    "key": "{{my-var}}"
+}:
+
+  {"id": "MyId1",
+  "description": "MyDescr1",
+  "createdDate": "2023-01-18T13:47:43.168",
+  "modifiedDate": null}
+
+<> 2023-01-18T135928.400.html
+
+###
+
+POST http://localhost:8080/create
+HTTP/1.1:
+Content-Type: application/json
+{:
+    "key": "{{my-var}}"
+}:
+
+  {"id": "MyId1",
+  "description": "MyDescr1",
+  "createdDate": "2023-01-18T13:47:43.168",
+  "modifiedDate": null}
+
+<> 2023-01-18T135925.400.html
+
+###
+
+POST http://localhost:8080/create
+HTTP/1.1:
+Content-Type: application/json
+
+  {"id": "MyId1",
+  "description": "MyDescr1",
+  "createdDate": "2023-01-18T13:47:43.168",
+  "modifiedDate": null}
+
+<> 2023-01-18T135721.400.html
+
+###
+
+POST http://localhost:8080/create
+
+<> 2023-01-18T135351.400.json
+
+###
+
+POST http://localhost:8080/create
+
+<> 2023-01-18T135348.400.json
+
+###
+
+POST http://localhost:8080/create
+
+<> 2023-01-18T135344.400.json
+
+###
+
+GET http://localhost:8080/get?id=MyId
+
+<> 2023-01-18T135344-1.200.json
+
+###
+
+GET http://localhost:8080/getAllEntities
+
+<> 2023-01-18T135344.200.json
+
+###
+
+POST http://localhost:8080/create
+
+<> 2023-01-18T135326.400.json
+
+###
+
+GET http://localhost:8080/get?id=MyId
+
+<> 2023-01-18T135325-1.200.json
+
+###
+
+GET http://localhost:8080/getAllEntities
+
+<> 2023-01-18T135325.200.json
+
+###
+
+POST http://localhost:8080/create
+
+<> 2023-01-18T135226.400.json
+
+###
+
+POST http://localhost:8080/create
+
+<> 2023-01-18T135224.400.json
+
+###
+
+POST http://localhost:8080/create
+
+<> 2023-01-18T135220.400.json
+
+###
+
+POST http://localhost:8080/create
+
+<> 2023-01-18T135215.400.json
+
+###
+
+POST http://localhost:8080/create
+
+<> 2023-01-18T135016.400.json
+
+###
+
+POST http://localhost:8080/create
+
+<> 2023-01-18T135008.400.json
+
+###
+
+GET http://localhost:8080/get?id=MyId
+
+<> 2023-01-18T134903.200.json
+
+###
+
+GET http://localhost:8080/get?id=MyId
+
+<> 2023-01-18T134856.200.json
+
+###
+
+POST http://localhost:8080/create
+
+<> 2023-01-18T134811.400.json
+
+###
+
+GET http://localhost:8080/getAllEntities
+
+<> 2023-01-18T134016.200.json
+
+###
+
+GET http://localhost:8080/get?id=MyId
+
+<> 2023-01-18T134013.200.json
+
+###
+
+GET http://localhost:8080/get?id=MyId
+
+<> 2023-01-18T133859.200.json
+
+###
+
+GET http://localhost:8080/getAllEntities
+
+<> 2023-01-18T133340.200.json
+
+###
+
+GET http://localhost:8080/get
+
+<> 2023-01-18T133317.400.json
+
+###
+

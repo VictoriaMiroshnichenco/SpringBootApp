@@ -35,5 +35,11 @@ public class MyEntityController {
 
     }
 
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<Entity> deleteToDo(@PathVariable String id){
+        repository.delete(Entity.builder().id(id).build());
+        return ResponseEntity.noContent().build();
+    }
+
 
 }
