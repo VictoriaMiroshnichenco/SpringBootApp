@@ -60,3 +60,6 @@ curl -X PUT -H "Content-Type:application/json" -d @"D:\Teach\_resume\heap\resume
 curl -i http://localhost:8080/getAllEntities
 
 curl -i http://localhost:8080/getAllEntities | jq
+
+Logging configuration test
+http://localhost:8080/logtest
