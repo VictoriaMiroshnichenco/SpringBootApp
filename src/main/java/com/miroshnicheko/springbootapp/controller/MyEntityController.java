@@ -35,8 +35,10 @@ public class MyEntityController {
             return ResponseEntity.badRequest().body(MyEntityValidationErrorBuilder.fromBindingErrors(errors));
         }
         Entity e = repository.save(entity);
+        //todo rework path to created item
         URI location = ServletUriComponentsBuilder.fromCurrentRequest().
                 path("/{id}").buildAndExpand(e.getId()).toUri();
+
         return ResponseEntity.created(location).build();
 
     }
