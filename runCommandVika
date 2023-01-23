@@ -52,3 +52,9 @@ http://localhost:8080/create
       "description": "MyDescr2",
       "createdDate": "2023-01-18T13:47:43.168",
       "modifiedDate": null}
+
+ Less28
+ Installing curl
+ https://curl.haxx.se/download.html
+curl -X PUT -H "Content-Type:application/json" -d @"D:\Teach\_resume\heap\resume-master\SpringBootApp\testdata\data.json" http://localhost:8080/create
+curl -i http://localhost:8080/getAllEntities
