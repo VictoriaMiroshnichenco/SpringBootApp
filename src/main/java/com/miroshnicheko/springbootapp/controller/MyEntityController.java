@@ -2,6 +2,8 @@ package com.miroshnicheko.springbootapp.controller;
 
 import com.miroshnicheko.data.Entity;
 import com.miroshnicheko.springbootapp.repository.EntityRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,10 +16,20 @@ import java.net.URI;
 
 @RestController("/myapi")
 public class MyEntityController {
-
+    Logger logger = LoggerFactory.getLogger(MyEntityController.class);
     @Autowired
     private EntityRepository repository;
 
+    @GetMapping("/logtest")
+    public String  logtest(){
+        logger.trace("A TRACE Message");
+        logger.debug("A DEBUG Message");
+        logger.info("An INFO Message");
+        logger.warn("A WARN Message");
+        logger.error("An ERROR Message");
+
+        return "Howdy! Check out the Logs to see the output...";
+    }
     @GetMapping("/getAllEntities")
     public ResponseEntity<Iterable<Entity>> getAllEntities(){
         return ResponseEntity.ok(repository.findAll());
