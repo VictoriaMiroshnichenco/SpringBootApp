@@ -72,3 +72,5 @@ password see in log after start
 37 Security: Using  security user password in app props
 http://localhost:8080/logtest
 vika/password
+37 CURL
+curl -i http://localhost:8080/getAllEntities -u vika:password
