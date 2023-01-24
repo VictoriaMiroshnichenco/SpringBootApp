@@ -20,6 +20,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.24' //required for anotation scan during compilation
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation "org.springframework.boot:spring-boot-configuration-processor"
+    implementation "org.springframework.boot:spring-boot-starter-security"
   //  implementation 'org.springframework.boot:spring-boot-starter-validation:3.0.1'
     implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
 //Thanks for using https://jar-download.com

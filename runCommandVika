@@ -63,3 +63,9 @@ curl -i http://localhost:8080/getAllEntities | jq
 
 Logging configuration test
 http://localhost:8080/logtest
+
+Login :
+
+37 Using generated security password
+http://localhost:8080/logtest
+password see in log after start

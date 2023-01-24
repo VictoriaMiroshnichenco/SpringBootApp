@@ -1,5 +1,9 @@
 GET http://localhost:8080/logtest
 
+###
+
+GET http://localhost:8080/logtest
+
 <> 2023-01-23T180812.200.txt
 
 ###
