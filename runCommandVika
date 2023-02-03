@@ -74,3 +74,5 @@ http://localhost:8080/logtest
 vika/password
 37 CURL
 curl -i http://localhost:8080/getAllEntities -u vika:password
+
+38 http://localhost:8080/index?name=Vika
