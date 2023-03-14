@@ -1,4 +1,4 @@
-package com.miroshnicheko.springbootapp;
+package com.miroshnicheko.client;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
