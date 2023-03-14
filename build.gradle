@@ -9,13 +9,18 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
 repositories {
+    mavenLocal()
     mavenCentral()
+    maven { url "https://repo.spring.io/release" }
+    maven { url "https://repo.spring.io/milestone" }
+    maven { url "https://repo.spring.io/snapshot" }
 }
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
+    //implementation("org.springframework.boot:spring-boot-starter-data-jpa") // does not work without additional configuration
     compileOnly 'org.projectlombok:lombok:1.18.24' //required during compilation
     annotationProcessor 'org.projectlombok:lombok:1.18.24' //required for anotation scan during compilation
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -28,6 +33,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
 
 
 }
