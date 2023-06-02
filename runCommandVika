@@ -76,3 +76,5 @@ vika/password
 curl -i http://localhost:8080/getAllEntities -u vika:password
 
 38 http://localhost:8080/index?name=Vika
+
+45 Created new remote branch test
